@@ -8,7 +8,7 @@ def PatternCount(data, pattern):
 
 if __name__ == '__main__':
     argp = argparse.ArgumentParser(description=__doc__)
-    argp.add_argument('-d', '--dataset', metavar='DATASET', default='', help='return warning if expiry is soon')
-    argp.add_argument('-p', '--pattern', metavar='PATTERN', default='', help='return critical if expiry is imminent')
+    argp.add_argument('-d', '--dataset', metavar='DATASET', default='', help='dataset input')
+    argp.add_argument('-p', '--pattern', metavar='PATTERN', default='', help='pattern to match against dataset')
     args = argp.parse_args()
     print(PatternCount(args.dataset, args.pattern))
