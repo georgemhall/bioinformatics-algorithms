@@ -2,9 +2,6 @@ import sys, argparse
 def PatternCount(data, pattern):
     count = 0
     for i in range(len(data)):
-        print data[i:i+len(pattern)]
-        print pattern
-
         if data[i:i+len(pattern)] == pattern:
             count = count + 1
     return count
