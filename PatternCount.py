@@ -1,4 +1,5 @@
 import sys, argparse
+
 def PatternCount(data, pattern):
     count = 0
     for i in range(len(data)):
